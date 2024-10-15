@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@npmcli/promise-spawn": "^8.0.1"
+    "@npmcli/promise-spawn": "^8.0.1",
+    "micromatch": "4.0.4"
   }
 }
