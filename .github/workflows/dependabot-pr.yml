@@ -18,7 +18,7 @@ jobs:
           echo "<details><summary>steps.dependabot-metadata.outputs</summary>" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo '```json' >> "$GITHUB_STEP_SUMMARY"
-          echo "${{toJson(steps.dependabot-metadata.outputs)}}" | jq '.' >> "$GITHUB_STEP_SUMMARY"
+          echo "${{toJson(steps.dependabot-metadata.outputs)}}" >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "</details>" >> "$GITHUB_STEP_SUMMARY"
