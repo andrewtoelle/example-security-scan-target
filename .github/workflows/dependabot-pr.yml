@@ -22,7 +22,7 @@ jobs:
           echo '```' >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo '```json' >> "$GITHUB_STEP_SUMMARY"
-          echo '${{toJson(steps.dependabot-metadata.outputs.updated-dependencies-json)}}' >> "$GITHUB_STEP_SUMMARY"
+          echo '${{steps.dependabot-metadata.outputs.updated-dependencies-json}}' >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "</details>" >> "$GITHUB_STEP_SUMMARY"
