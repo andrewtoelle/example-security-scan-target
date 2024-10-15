@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directories:
+      - "/"
+    group:
+      patterns:
+        - "*"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "16:00"
