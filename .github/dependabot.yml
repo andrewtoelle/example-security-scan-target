@@ -3,8 +3,16 @@ updates:
   - package-ecosystem: "npm"
     directories:
       - "/"
-    group:
-      patterns:
-        - "*"
+    groups:
+      production:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "send" # Let's pretend that upgrading this dependency is causing non-trivial test failures
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
     schedule:
       interval: "daily"
