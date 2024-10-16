@@ -4,15 +4,11 @@ updates:
     directories:
       - "/"
     groups:
-      production:
-        patterns:
-          - "*"
+      production-dependencies:
+        dependency-type: production
         exclude-patterns:
           - "send" # Let's pretend that upgrading this dependency is causing non-trivial test failures
-      dev-dependencies:
+      development-dependencies:
         dependency-type: "development"
-        update-types:
-          - "minor"
-          - "patch"
     schedule:
       interval: "daily"
