@@ -11,8 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@npmcli/promise-spawn": "^8.0.1",
-    "markdown-to-jsx": "7.3.2",
-    "micromatch": "4.0.4",
+    "markdown-to-jsx": "7.5.0",
+    "micromatch": "4.0.8",
     "send": "0.18.0"
   },
   "devDependencies": {
