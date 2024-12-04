@@ -6,25 +6,27 @@ settings:
 
 dependencies:
   '@npmcli/promise-spawn':
-    specifier: ^8.0.1
-    version: 8.0.1
+    specifier: ^8.0.2
+    version: 8.0.2
   markdown-to-jsx:
-    specifier: 7.3.2
-    version: 7.3.2(react@18.3.1)
+    specifier: 7.7.1
+    version: 7.7.1(react@18.3.1)
   micromatch:
-    specifier: 4.0.4
-    version: 4.0.4
-  semver:
-    specifier: 5.3.0
-    version: 5.3.0
+    specifier: 4.0.8
+    version: 4.0.8
   send:
     specifier: 0.18.0
     version: 0.18.0
 
+devDependencies:
+  semver:
+    specifier: 5.3.0
+    version: 5.3.0
+
 packages:
 
-  /@npmcli/promise-spawn@8.0.1:
-    resolution: {integrity: sha512-ZscqKtJqy7oj6MgXEJcHQ1om4utU0Q84QtC28UVuiO6ALSO9sDPanXdu6Wd1oYhItW8fx2u96zRFUE8BuPlAjA==}
+  /@npmcli/promise-spawn@8.0.2:
+    resolution: {integrity: sha512-/bNJhjc+o6qL+Dwz/bqfTQClkEO5nTQ1ZEcdCkAQjhkZMHIh22LPG7fNh1enJP1NKWDqYiiABnjFCY7E0zHYtQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
     dependencies:
       which: 5.0.0
@@ -124,8 +126,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /markdown-to-jsx@7.3.2(react@18.3.1):
-    resolution: {integrity: sha512-B+28F5ucp83aQm+OxNrPkS8z0tMKaeHiy0lHJs3LqCyDQFtWuenaIrkaVTgAm1pf1AU85LXltva86hlaT17i8Q==}
+  /markdown-to-jsx@7.7.1(react@18.3.1):
+    resolution: {integrity: sha512-BjLkHb+fWCAH9gp7ndbgPrY+zeZlGFtCiQNTWk+PD+GKfLg9YsUPNonSsYXGw6nQ7eZqeR+i71X59PpWXlxc/w==}
     engines: {node: '>= 10'}
     peerDependencies:
       react: '>= 0.14.0'
@@ -133,8 +135,8 @@ packages:
       react: 18.3.1
     dev: false
 
-  /micromatch@4.0.4:
-    resolution: {integrity: sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg==}
+  /micromatch@4.0.8:
+    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
     dependencies:
       braces: 3.0.3
@@ -182,7 +184,7 @@ packages:
   /semver@5.3.0:
     resolution: {integrity: sha512-mfmm3/H9+67MCVix1h+IXTpDwL6710LyHuk7+cWC9T1mE0qz4iHhh6r4hU2wrIT9iTsAAC2XQRvfblL028cpLw==}
     hasBin: true
-    dev: false
+    dev: true
 
   /send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
